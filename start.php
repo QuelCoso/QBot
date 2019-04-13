@@ -1,5 +1,5 @@
 <?php
-require_once 'magic.php';
+require_once 'QBot.php';
 if(file_exists("settings.json"))
 {
     $settings = json_decode(file_get_contents("settings.json"), true);
