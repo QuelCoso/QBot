@@ -1,6 +1,9 @@
 # QBot
 Base bot telegram in PHP!
 
+# PHP
+e consigliato l'utilizzo di php-7.2
+
 # Installazione
 
 Scarica i file "QBot.php" e "start.php", avvia lo start.php con php start.php e godi la techgs.
