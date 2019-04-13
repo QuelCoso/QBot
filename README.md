@@ -14,6 +14,8 @@ troverai file exaple.php con un piccolo esempio!
 
 🗨 Un tecnologia: @QuelCoso👁
 
+# Metodi
+I metodi sono quelli che si trovano in https://core.telegram.org/bots/api
 
 # Variabili Predefinite
 Le variabili predefinite sono le seguenti:
