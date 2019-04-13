@@ -14,6 +14,10 @@ troverai file exaple.php con un piccolo esempio!
 
 🗨 Un tecnologia: @QuelCoso👁
 
+# Inline Keyboard
+Per le tastiere inline usare:
+$QBot->inline_kb(ARRAY_INLINE_KEYBOARD);
+
 # Metodi
 I metodi sono quelli che si trovano in https://core.telegram.org/bots/api
 
