@@ -17,7 +17,7 @@ troverai file exaple.php con un piccolo esempio!
 # Inline Keyboard
 Per le tastiere inline usare:
 $QBot->inline_kb(ARRAY_INLINE_KEYBOARD);
-(ESEMPIO)[https://gram.tk/esempio_inline.png]
+[ESEMPIO](https://gram.tk/esempio_inline.png)
 
 
 # Metodi
