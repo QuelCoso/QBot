@@ -12,7 +12,7 @@ Se sei pigro scarica auto.php e fai php auto.php così fa tutto da solos.
 
 troverai file exaple.php con un piccolo esempio!
 
-🗨 Un tecnologia: [@QuelCoso](t.me/quelcoso) 👁
+🗨 Un tecnologia: [@QuelCoso](http://t.me/quelcoso) 👁
 
 # Inline Keyboard
 Per le tastiere inline usare:
