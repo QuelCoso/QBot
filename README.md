@@ -31,7 +31,7 @@ Le variabili predefinite sono le seguenti:
 - $title
 - $username
 - $name
-
+- $QBot (Variabile della classe)
 # Supporto
 per qualsiasi problema contact me: @quelcoso.
 
