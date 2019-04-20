@@ -2,7 +2,7 @@
 Base bot telegram in PHP!
 
 # PHP
-e consigliato l'utilizzo di php-7.2
+È consigliato l'utilizzo di php-7.2
 
 # Installazione
 
