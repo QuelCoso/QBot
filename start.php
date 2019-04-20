@@ -49,7 +49,6 @@ if(file_exists("settings.json"))
 }else
 {
     file_put_contents("settings.json", json_encode(['token' => "YOURBOTTOKEN", 'bot file' => 'bot.php']), JSON_PRETTY_PRINT);
-    echo "\nPlease restart with 'php start.php'\n";
     exit();
 }
 
@@ -68,7 +67,9 @@ while(true)
         {
           
             $offset = $update['update_id'] + 1;
-            $update['update'] = $update;
+            $test['update'] = $update;
+            unset($update);
+            $update = $test;
 if(isset($update['update']['message']['text'])) $msg = $update['update']['message']['text']; else $msg = '';
 if(isset($update['update']['message']['chat']['id'])) $chatID = $update['update']['message']['chat']['id']; else $chatID = ''; 
 if(isset($update['update']['message']['chat']['title'])) $title = $update['update']['message']['chat']['title']; else $title = '';
@@ -76,13 +77,20 @@ if(isset($update['update']['message']['from']['first_name'])) $name=$update['upd
 if(isset($update['update']['message']['from']['id'])) $userID=$update['update']['message']['from']['id'];else $userID = '';
 if(isset($update['update']['message']['from']['username'])) $username=$update['update']['message']['from']['username'];else $username = '';
 if(isset($update['update']['message']['message_id'])) $msgID=$update['update']['message']['message_id'];else $msgID = '';
-            
+if(isset($update['update']['callback_query']['id'])) $cbID = $update['update']['callback_query']['id']; else $cbID = '';
+if(isset($update['update']['callback_query']['data'])) $cbdata = $update['update']['callback_query']['data']; else $cbdata = '';        
+if(isset($update['update']['callback_query']['message']['chat']['id'])) $chatID = $update['update']['callback_query']['message']['chat']['id']; 
+if(isset($update['update']['callback_query']['message']['from']['id'])) $userID = $update['update']['callback_query']['message']['from']['id']; 
+if(isset($update['update']['callback_query']['from']['first_name'])) $name = $update['update']['callback_query']['from']['first_name']; 
+if(isset($update['update']['callback_query']['message']['message_id'])) $cbmsgID = $update['update']['callback_query']['message']['message_id'];            
         
-
-           
-            include $file;
+            
+include $file;
             
 
+if($msg != '' and $userID != '' and $name != '' and $chatID != '' and $msgID != '') echo "\n$name ($chatID) »» $title ($chatID) »»» $msg\n";
+
+            
             
         }
     
