@@ -8,7 +8,6 @@ if(file_exists("settings.json"))
     
     if(isset($settings['token']))
     {
-        settoken:
         $token = $settings['token'];
         if($token == 'YOURBOTTOKEN')
         {
@@ -50,8 +49,8 @@ if(file_exists("settings.json"))
 }else
 {
     file_put_contents("settings.json", json_encode(['token' => "YOURBOTTOKEN", 'bot file' => 'bot.php']), JSON_PRETTY_PRINT);
-    echo "\nCreato il settings.json\n";
-    goto settoken;
+    echo "\nPlease restart with 'php start.php'\n";
+    exit();
 }
 
 $offset = 0;
